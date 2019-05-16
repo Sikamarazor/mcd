@@ -1,15 +1,62 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-content>
+
+<ion-content class="mcd">
+<div class="menuNavImg">
+  <img alt="logo" height="40" src="assets/imgs/mcdim.png">
+</div>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+
+      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item1">
+        <img src="assets/imgs/house-black-silhouette-without-door.png" width="20" />
+        News
+
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToTransactionHistory()" id="menu-list-item2">
+        <img src="assets/imgs/shopping-label.png" width="20" />
+        Offers
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToSavedContacts()" id="menu-list-item3">
+        <img src="assets/imgs/burger-and-soda.png" width="20" />
+        Food
+      </ion-item>
+      <ion-item color="none" menuClose="" id="menu-list-item4" on-click="logbook()">
+        <img src="assets/imgs/location-pin.png" width="20" />
+
+        Restaurant
+      </ion-item>
+      <ion-item color="none" menuClose="" id="menu-list-item5" on-click="logout()">
+        <img src="assets/imgs/man-user.png" width="20" />
+
+        My Account
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item1">
+        <img src="assets/imgs/chat.png" width="20" />
+        RateURVisit
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToTransactionHistory()" id="menu-list-item2">
+        <img src="assets/imgs/message-closed-envelope.png" width="20" />
+
+        Contact Us
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToSavedContacts()" id="menu-list-item3">
+        <img src="assets/imgs/question-mark-on-a-circular-black-background.png" width="20" />
+
+        FAQ
+      </ion-item>
+      <ion-item color="none" menuClose="" id="menu-list-item4" on-click="logbook()">
+        <img src="assets/imgs/icon (1).png" width="20" />
+        Terms and Conditions
+      </ion-item>
+      <ion-item color="none" menuClose="" id="menu-list-item5" on-click="logout()">
+        <img src="assets/imgs/icon (1).png" width="20" />
+        About McDonald's
+      </ion-item>
+      <ion-item color="none" menuClose="" id="menu-list-item5" on-click="logout()">
+        <img src="assets/imgs/grid-world.png" width="20" />
+        Region & Language
+      </ion-item>
+
     </ion-list>
   </ion-content>
 

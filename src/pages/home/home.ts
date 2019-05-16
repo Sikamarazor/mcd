@@ -11,4 +11,12 @@ export class HomePage {
 
   }
 
+  gotoOffer(val){
+    console.log(val);
+    console.log("Hey");
+    this.navCtrl.push('OfferPage',{
+      val : val
+    });
+  }
+
 }

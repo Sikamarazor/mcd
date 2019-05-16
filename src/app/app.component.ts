@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+// import { StatusBar } from '@ionic-native/status-bar';
+// import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -16,25 +16,40 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-    this.initializeApp();
+  constructor() {
+   // this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
-    ];
+    // this.pages = [
+    //   { title: 'Home', component: HomePage },
+    //   { title: 'List', component: ListPage }
+    // ];
+
+    // function onCommand(command) {
+    //   var commandAsBytes = new Uint8Array(command);
+    //   var commandAsString = hce.util.byteArrayToHexString(commandAsBytes);
+
+    //   // do something with the command
+
+    //   // send the response
+    //   hce.sendReponse(commandResponse);
+    // }
+
+
+    //this.hce.registerCommandCallback();
 
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
+
+
+  // initializeApp() {
+  //   this.platform.ready().then(() => {
+  //     // Okay, so the platform is ready and our plugins are available.
+  //     // Here you can do any higher level native things you might need.
+  //     this.statusBar.styleDefault();
+  //     this.splashScreen.hide();
+  //   });
+  // }
 
   openPage(page) {
     // Reset the content nav to have just this page

@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.menu-size ion-item {
+  height: 80px;
+  background: rgba(0, 0, 0, 0);
+  color: #FFF;
+}
+
+.menuNavImg img {
+  //margin-left: 50%;
+  width: fit-content;
+  height: 100%;
+}
+.mcd img {
+    padding-right: 7px;
+
+}
+// .label {
+//   display: inline;
+//   padding: .2em .6em .3em;
+//   font-size: 75%;
+//   font-weight: 700;
+//   line-height: 1;
+//   color: #000;
+//   text-align: left;
+//   white-space: nowrap;
+//   vertical-align: baseline;
+//   border-radius: .25em;
+// }
